@@ -72,10 +72,10 @@ def run(word, drawer=draw_pendu):
         if try_letter not in word:
             try: next(pendu)
             except StopIteration:
-                print("Vous avez perdu !")
+                print(f"Vous avez perdu !, le mot était '{word}'")
                 return None
         if letters_found.issuperset(word):
-            print("Bravo !")
+            print(f"Bravo !, le mot est bien '{word}'")
             return None
 
 
